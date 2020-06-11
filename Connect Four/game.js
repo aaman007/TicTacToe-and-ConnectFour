@@ -113,7 +113,7 @@ let playerName = player1;
 let playerColor = player1Color;
 
 
-$('h3').text(playerName + ", its your turn. Pick a row.");
+$('h3').text(playerName + ", its your turn. Pick a column.");
 
 
 $('.board button').on('click', function(){
@@ -145,12 +145,12 @@ $('.board button').on('click', function(){
 	if(currentPlayer){
 		playerName = player1;
 		playerColor = player1Color;
-		$('h3').text(playerName + ", its your turn. Pick a row.");
+		$('h3').text(playerName + ", its your turn. Pick a column.");
 	}
 	else{
 		playerName = player2;
 		playerColor = player2Color;
-		$('h3').text(playerName + ", its your turn. Pick a row.");
+		$('h3').text(playerName + ", its your turn. Pick a column.");
 	}
 	if(drawChecker()){
 		$('h1').text("Draw Match!!!");
